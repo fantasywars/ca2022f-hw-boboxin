@@ -97412,15 +97412,15 @@ class Camera {
       /*眉毛控制*/
       view.browRY = (faces[0].keypoints[27].y - faces[0].keypoints[223].y -7.5)/2;
       view.browLY = (faces[0].keypoints[257].y - faces[0].keypoints[443].y -7.5)/2;
-      view.browRX = (faces[0].keypoints[223].x-250)/500*(-1);
-      view.browLX = (faces[0].keypoints[443].x-250)/500*(-1);
+      view.browRX = (faces[0].keypoints[223].x-250)/50*(-1);
+      view.browLX = (faces[0].keypoints[443].x-250)/50*(-1);
       /*左右擺頭*/
       view.angleX = (faces[0].keypoints[226].z-faces[0].keypoints[446].z)/2;
       /*上下點頭*/
       //抖動
-      view.angleY = (faces[0].keypoints[151].z-faces[0].keypoints[175].z)*2;
+      // view.angleY = (faces[0].keypoints[151].z-faces[0].keypoints[175].z)*2;
       //穩定
-      // view.angleY = (faces[0].keypoints[168].y-25)/10*30*(-1);
+      view.angleY = (faces[0].keypoints[168].y-250)/10*30*(-1);
 
 
       /*歪頭*/
